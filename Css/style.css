@@ -1,0 +1,645 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* General Slider Image Styling */
+ #HeroSection{
+     margin-top:-12vh;
+ }
+ .slider-image {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  /* Overlay for Dim Effect */
+  .carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1;
+  }
+
+  /* Carousel Caption Styling */
+  .carousel-caption {
+    position: absolute;
+  z-index: 2;
+  max-width: 800px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the text vertically and horizontally */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  text-align: center;
+
+  }
+
+  .text-shadow {
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+  }
+
+  /* Button Customization */
+  .btn-custom {
+    background-color: #f8f9fa;
+  color: #000;
+  border: 2px solid #f8f9fa;
+  transition: all 0.3s ease-in-out;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+
+  }
+
+  .btn-custom:hover {
+    background-color: transparent;
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+    /* transform: scale(1.1); */
+  }
+
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .slider-image {
+      height: 300px;
+    }
+
+    .carousel-caption h2 {
+      font-size: 1.5rem;
+    }
+
+    .carousel-caption p {
+      font-size: 1rem;
+    }
+
+    .btn-custom {
+      font-size: 1rem;
+      padding: 8px 20px;
+    }
+  }
+
+
+  /* style for transparent heder */
+
+  /* Make Header Transparent */
+#header {
+   display: inline-grid;
+    height: 12vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; 
+    background: transparent; 
+    transition: background 0.3s ease; 
+  }
+  #header a:hover{
+    text-decoration: underline;
+  }
+  /* Header Links Styling */
+  #header .nav-link {
+    color: #fff !important; 
+    font-weight: bold;
+    transition: color 0.3s ease; 
+  }
+  
+  #header .nav-link:hover {
+    color: #f8f9fa !important;
+    text-decoration: underline;
+  }
+  
+  /* Make Header Solid When Scrolled */
+  #header.scrolled-header{
+    position:sticky;
+    background: rgba(0, 0, 0, 0.9) !important; 
+    z-index: 1000 !important;
+  }
+
+
+  /* Icons custome color */
+  .fa-instagram:before{
+    color:#fbad50;
+  }
+
+  .fa-github:before{
+    color: white;
+  }
+
+/* style for OurStorySecation  */
+
+
+
+.OurStorySecation {
+  padding:8vh 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.custom-box {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 55%;
+  text-align: center;
+  z-index: 2;
+}
+
+.custom-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.custom-description {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.btn-orange {
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.btn-orange:hover {
+  background-color: #da6700;
+  color: white;
+}
+
+
+.image-box {
+  cursor: pointer;
+  width: 28%;
+  height: 70vh;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-box img:hover {
+  transform: scale(1.1);
+}
+
+
+/* box title style */
+
+/* Unique design for titles */
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Cursive font for the word "Discover" */
+.title-discover {
+  font-family: 'Pacifico', cursive; /* Cursive font for Discover */
+  color: #2C3E50;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Styling for "Our Story" below "Discover" */
+.title-our-story {
+  font-family: 'Arial', sans-serif;
+  color: #8B4513;
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+/* Box styling */
+.box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  text-align: center;
+}
+
+.box .description {
+  font-size: 1rem;
+  color: #777;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+.box .btn-custom {
+  background-color: #FF6347; /* Tomato button */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+.box .btn-custom:hover {
+  background-color: #FF4500; /* Darker tomato on hover */
+}
+
+
+.TitleBelowIcon{
+  width:80px;
+
+}
+
+
+
+/* style for background */
+
+.footer-bg {
+  background-image: url('../images/FoodImages/footer_home.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+}
+
+.footer-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Black overlay with opacity */
+  z-index: 1;
+}
+
+.footer-bg .container {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-bg .tagline {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.footer-bg h5 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.footer-bg a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-bg a:hover {
+  text-decoration: underline;
+}
+
+.footer-bg .input-group {
+  margin-top: 10px;
+}
+
+.footer-bg .input-group input {
+  max-width: 250px;
+}
+
+.innerFooter{
+  text-align: center;
+  align-items: center;
+}
+
+
+
+/* style for cusome reivew section */
+
+.about-us-section .row{
+  margin-left: 0;
+  margin-right: 0;
+  /* padding: 50px; */
+  
+}
+
+.remove-padding{
+  padding: 0px;
+}
+
+
+/* New about us section */
+
+.CustomerForm .card {
+  background-color: #ec8529;
+  border-radius: 15px;
+  max-width: 1000px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* padding: 20px; */
+  margin-bottom: 3em;
+}
+
+.form-section {
+  padding: 40px;
+}
+
+.form-section h3 {
+  color: #45260a;
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.form-section p {
+  color: #45260a;
+  font-size: 1rem;
+}
+
+.form-section label {
+  font-weight: bold;
+  font-family: 'Verdana', sans-serif;
+}
+
+.form-section input, .form-section select {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 10px;
+}
+
+.form-section button {
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-section button:hover {
+  background-color: #218838;
+}
+
+.image-section img {
+  border-radius: 0px 15px 15px 0px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.image-section {
+  position: relative;
+  display: inline-block; 
+  object-fit: cover;
+}
+
+
+
+.OverlayOnGirlImage {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.5; 
+  transition: opacity 0.3s ease;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+
+.CategorySection{
+  margin :5em auto;
+}
+
+.text-padding {
+  padding: 30px;
+}
+
+.text-padding h3,
+.text-padding p,
+.text-padding ul {
+  margin-bottom: 15px; 
+}
+
+.about-us-section .col-md-6 img {
+  padding: 0; 
+}
+
+
+/* Customer reiview section */
+
+#customer-reviews {
+  text-align: center;
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+#customer-reviews h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #333;
+}
+
+.review-slider {
+  display: flex;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.review-item {
+  flex: 0 0 100%;
+  text-align: center;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.review-item:hover {
+  transform: scale(1.05);
+}
+
+.review-item p {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.review-item h3 {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #333;
+}
+
+.rating {
+  font-size: 1.2em;
+  color: #ffd700;
+  margin-top: 10px;
+}
+
+.slick-prev, .slick-next {
+  font-size: 30px;
+  color: #333;
+  z-index: 1;
+}
+
+.slick-prev {
+  left: -40px;
+}
+
+.slick-next {
+  right: -40px;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  color: #000;
+}
+
+
+/* style for coupon code section */
+
+
+.special-offers {
+  padding: 50px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.special-offers h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+.special-offers p {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.offer-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.offer-item {
+  padding: 25px;
+  width: 30%; /* Adjust width to 60% of the previous size */
+  max-width: 600px; /* Optional: to ensure it doesn't get too wide on large screens */
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.offer-item h3 {
+  font-size: 1.6em;
+  color: #e67e22;
+  margin-bottom: 15px;
+}
+
+.offer-item p {
+  font-size: 1.1em;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.offer-item ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.offer-item ul li {
+  font-size: 1.1em;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+
+.offer-btn {
+  background-color: #e67e22;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.offer-btn:hover {
+  background-color: #da6700;
+}
+
+/* Custom Colors and Box Shadows */
+.offer-1 {
+  background-color: transparent;
+  border: 2px solid #fdf2e9; /* Transparent background with border color */
+}
+
+.offer-2 {
+  background-color: #fdf2e9; /* Light orange background */
+  color: white;
+}
+
+/* Positioning the Boxes */
+.offer-1, .offer-2 {
+  margin-top: 30px;
+}
+
+/* Add Hover Effects to Offer Boxes */
+.offer-item:hover {
+  transform: translateY(-10px);
+}
+
+/* Font Awesome Icon Styles */
+.offer-item i {
+  font-size: 1.3em;
+  color: #d9a678; /* Red color for icons */
+}
+
+/* Small Tweaks for Layout */
+.offer-container .offer-item {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.offer-container {
+  gap: 40px;
+}

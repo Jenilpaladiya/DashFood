@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+  <title>Reastaurant</title>
+
+
+
+</head>
+
+<body>
+  <div id="header"></div> <!-- Header -->
+
+
+  <div id="HeroSection" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="slider-image" style="background-image: url('images/slider/slider1.jpg');">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center">
+            <h2 class="display-4 fw-bold text-light text-shadow">Welcome to Our Food World</h2>
+            <p class="lead text-light text-shadow mb-4">Discover amazing features and offers with us!</p>
+            <a href="#" class="btn btn-custom btn-lg">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="slider-image" style="background-image: url('images/slider/slider2.jpg');">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center">
+            <h2 class="display-4 fw-bold text-light text-shadow">Explore Our Products</h2>
+            <p class="lead text-light text-shadow mb-4">Find what you need in our extensive collection.</p>
+            <a href="#" class="btn btn-custom btn-lg">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="slider-image" style="background-image: url('images/slider/slider3.jpg');">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center">
+            <h2 class="display-4 fw-bold text-light text-shadow">Contact Us Today</h2>
+            <p class="lead text-light text-shadow mb-4">We’re here to assist with your queries.</p>
+            <a href="#" class="btn btn-custom btn-lg">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#HeroSection" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#HeroSection" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+  <!-- OurStorySecation -->
+
+  <div class="OurStorySecation" id="our_story">
+    <!-- Box -->
+    <div class="custom-box">
+      <h2 class="title title-discover">Discover</h2></br>
+      <h3 class="title title-our-story">Our Story</h3></br>
+      <img src="images/FoodImages/food_icon.png" alt="Image description" class="image TitleBelowIcon">
+      <p class="custom-description mt-3">
+        At Dash Food, we bring the rich and vibrant flavors of Gujarat to your plate. Our menu features a variety of
+        mouthwatering Gujarati snacks, carefully prepared with traditional recipes and the finest ingredients. Whether
+        you're craving a delicious plate of Khaman, a crispy and savory Vadapav, or the warm and comforting Kumbhaniya
+        Bhajiya, we promise to deliver an authentic taste that will transport you to the heart of Gujarat.
+      </p>
+      <!-- <p class="custom-description">
+        Step into a world where taste meets creativity, and let us take you on an unforgettable gastronomic adventure. 
+        Your satisfaction is our greatest achievement.
+      </p> -->
+      <button class="custom-btn btn-orange mt-4">Learn More</button>
+    </div>
+
+
+    <!-- Image 1 -->
+    <div class="image-box">
+      <img src="images/FoodImages/khaman.webp" alt="Fafda Recipe">
+    </div>
+
+    <!-- Image 2 -->
+    <div class="image-box">
+      <img src="images/FoodImages/vadapav.jpg" alt="Khandvi Recipe">
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- Category section -->
+
+  <div class="container CategorySection">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item mx-3">
+          <a class="nav-link text-dark d-flex flex-column align-items-center">
+            <i class="fas fa-utensils fa-2x"></i>
+            <span class="mt-1">Gujarati Specials</span>
+          </a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link text-dark d-flex flex-column align-items-center">
+            <i class="fas fa-pepper-hot fa-2x"></i>
+            <span class="mt-1">Spicy Delights</span>
+          </a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link text-dark d-flex flex-column align-items-center">
+            <i class="fas fa-cookie-bite fa-2x"></i>
+            <span class="mt-1">Sweet Treats</span>
+          </a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link text-dark d-flex flex-column align-items-center">
+            <i class="fas fa-leaf fa-2x"></i>
+            <span class="mt-1">Healthy Options</span>
+          </a>
+        </li>
+        <!-- Replaced Non-Veg Delights with 'Street Snacks' -->
+        <li class="nav-item mx-3">
+          <a class="nav-link text-dark d-flex flex-column align-items-center">
+            <i class="fas fa-burger fa-2x"></i>
+            <span class="mt-1">Street Snacks</span>
+          </a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link text-dark d-flex flex-column align-items-center">
+            <i class="fas fa-coffee fa-2x"></i>
+            <span class="mt-1">Beverages</span>
+          </a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link text-dark d-flex flex-column align-items-center">
+            <i class="fas fa-ice-cream fa-2x"></i>
+            <span class="mt-1">Desserts</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <!-- FoodMenu section -->
+
+
+  <div class="FoodMenuSection container mt-4" id="menu">
+    <!-- Updated Our Menu Title -->
+    <h3 class="text-center"
+      style="font-size: 36px; font-weight: bold; color: #333; text-transform: uppercase; letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); margin-bottom: 40px;">
+      Explore Our Delicious Menu
+    </h3>
+    <div class="row">
+      <!-- Menu Item 1 -->
+      <div class="col-md-4">
+        <div class="menu-item text-center p-3"
+          style="border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px;">
+          <img src="images/FoodImages/khakra_chaat.jpg" alt="Khakhra" class="img-fluid rounded-circle"
+            style="padding: 8px;">
+          <h5 style="margin-top: 15px; font-weight: bold; color: #555;">Khakhra</h5>
+          <p style="font-size: 14px; color: #666;">A crispy and savory Gujarati snack.</p>
+          <div class="ingredients">
+            <div class="ingredient" style="display: inline-block; margin: 5px;">
+              <img src="https://img.icons8.com/ios-filled/20/ff9800/wheat.png" alt="Wheat Flour">
+              <p style="font-size: 12px; color: #666;">Wheat Flour</p>
+            </div>
+            <div class="ingredient" style="display: inline-block; margin: 5px;">
+              <img src="https://img.icons8.com/ios-filled/20/4caf50/potato.png" alt="Potato">
+              <p style="font-size: 12px; color: #666;">Potato</p>
+            </div>
+            <div class="ingredient" style="display: inline-block; margin: 5px;">
+              <img src="https://img.icons8.com/ios-filled/20/8bc34a/garlic.png" alt="Garlic">
+              <p style="font-size: 12px; color: #666;">Garlic</p>
+            </div>
+          </div>
+          <div style="margin-top: 15px;">
+            <button
+              style="background: linear-gradient(to right, #ff5722, #ffc107); color: white; border: none; padding: 12px 30px; border-radius: 10px; font-weight: bold; cursor: pointer; font-size: 14px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);">Discover
+              Ingredients</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Item 2 -->
+      <div class="col-md-4">
+        <div class="menu-item text-center p-3"
+          style="border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px;">
+          <img src="images/FoodImages/one_vadapav.jpg" alt="Vada Pav" class="img-fluid rounded-circle"
+            style="padding: 8px;">
+          <h5 style="margin-top: 15px; font-weight: bold; color: #555;">Vada Pav</h5>
+          <p style="font-size: 14px; color: #666;">A classic street food made with spicy potato filling.</p>
+          <div class="ingredients">
+            <div class="ingredient" style="display: inline-block; margin: 5px;">
+              <img src="https://img.icons8.com/ios-filled/20/ff9800/wheat.png" alt="Wheat Flour">
+              <p style="font-size: 12px; color: #666;">Wheat Flour</p>
+            </div>
+            <div class="ingredient" style="display: inline-block; margin: 5px;">
+              <img src="https://img.icons8.com/ios-filled/20/4caf50/potato.png" alt="Potato">
+              <p style="font-size: 12px; color: #666;">Potato</p>
+            </div>
+            <div class="ingredient" style="display: inline-block; margin: 5px;">
+              <img src="https://img.icons8.com/ios-filled/20/8bc34a/garlic.png" alt="Garlic">
+              <p style="font-size: 12px; color: #666;">Garlic</p>
+            </div>
+          </div>
+          <div style="margin-top: 15px;">
+            <button
+              style="background: linear-gradient(to right, #4caf50, #8bc34a); color: white; border: none; padding: 12px 30px; border-radius: 10px; font-weight: bold; cursor: pointer; font-size: 14px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);">Discover
+              Ingredients</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Item 3 -->
+      <div class="col-md-4">
+        <div class="menu-item text-center p-3"
+          style="border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px;">
+          <img src="images/FoodImages/khaman_dhokla.jpg" alt="Dhokla" class="img-fluid rounded-circle"
+            style="padding: 8px;">
+          <h5 style="margin-top: 15px; font-weight: bold; color: #555;">Dhokla</h5>
+          <p style="font-size: 14px; color: #666;">Steamed savory cake, a Gujarati delicacy.</p>
+          <div class="ingredients">
+            <div class="ingredient" style="display: inline-block; margin: 5px;">
+              <img src="https://img.icons8.com/ios-filled/20/ff9800/wheat.png" alt="Wheat Flour">
+              <p style="font-size: 12px; color: #666;">Wheat Flour</p>
+            </div>
+            <div class="ingredient" style="display: inline-block; margin: 5px;">
+              <img src="https://img.icons8.com/ios-filled/20/4caf50/potato.png" alt="Potato">
+              <p style="font-size: 12px; color: #666;">Potato</p>
+            </div>
+            <div class="ingredient" style="display: inline-block; margin: 5px;">
+              <img src="https://img.icons8.com/ios-filled/20/8bc34a/garlic.png" alt="Garlic">
+              <p style="font-size: 12px; color: #666;">Garlic</p>
+            </div>
+          </div>
+          <div style="margin-top: 15px;">
+            <button
+              style="background: linear-gradient(to right, #2196f3, #03a9f4); color: white; border: none; padding: 12px 30px; border-radius: 10px; font-weight: bold; cursor: pointer; font-size: 14px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);">Discover
+              Ingredients</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- Customer Form Data Section -->
+
+  <div class="CustomerForm container mt-5 d-flex justify-content-center" id="contact">
+    <div class="card">
+      <div class="row align-items-center">
+        <!-- Left Side: Form in 70% Area -->
+        <div class="col-md-7 form-section">
+          <h3>Get your first meal for free!</h3>
+          <p>Healthy, tasty, and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause
+            anytime. And the first meal is on us!</p>
+          <form>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" placeholder="John">
+              </div>
+              <div class="col-md-6">
+                <label for="emailAddress">Email Address</label>
+                <input type="email" id="emailAddress" placeholder="me@example.com">
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="referral">Where did you hear from us?</label>
+              <select id="referral">
+                <option selected>Please choose one option:</option>
+                <option value="1">Social Media</option>
+                <option value="2">Friend or Family</option>
+                <option value="3">Online Ads</option>
+                <option value="4">Other</option>
+              </select>
+            </div>
+            <button type="submit">Sign up now</button>
+          </form>
+        </div>
+
+        <!-- Right Side: Full Image in 30% Area -->
+        <div class="col-md-5 image-section">
+          <img class="imageOfGirl" src="images/FoodImages/happy_customer.jpg" alt="Happy Customer">
+          <div class="OverlayOnGirlImage"></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- coupon code section -->
+
+  <section class="special-offers">
+    <div class="container">
+      <h2>Special Offers of the Week</h2>
+      <p>Make the most of our limited-time offers! Discover great deals and enjoy our special services.</p>
+
+      <div class="offer-container">
+        <!-- Offer 1: Unlimited Gujarati Thali on Sundays -->
+        <div class="offer-item offer-1">
+          <h3>Unlimited Gujarati Thali - Every Sunday!</h3>
+          <p>Enjoy a mouthwatering unlimited Gujarati thali every Sunday. Savor all your favorite dishes in one grand
+            meal.</p>
+          <ul>
+            <li><i class="fas fa-utensils"></i> Dal Dhokli</li>
+            <li><i class="fas fa-utensils"></i> Kadhi</li>
+            <li><i class="fas fa-utensils"></i> Chapati</li>
+            <li><i class="fas fa-utensils"></i> Sabzi (Vegetable curry)</li>
+            <li><i class="fas fa-utensils"></i> Rice</li>
+            <li><i class="fas fa-utensils"></i> Shira (Dessert)</li>
+            <li><i class="fas fa-utensils"></i> Raita</li>
+          </ul>
+          <p><strong>Price:</strong> ₹500 per person</p>
+          <a href="book-table.html" class="offer-btn">Book Now</a>
+        </div>
+
+        <!-- Offer 2: Discount for Group Visit -->
+        <div class="offer-item offer-2">
+          <h3>Group Visit Discount</h3>
+          <p>Planning a group visit? Enjoy amazing discounts when you bring your friends and family! Perfect for
+            gatherings.</p>
+          <ul>
+            <li><i class="fas fa-users"></i> Minimum 5 people required</li>
+            <li><i class="fas fa-percent"></i> 15% off on total bill</li>
+            <li><i class="fas fa-cake"></i> Complimentary dessert for the group</li>
+
+            
+                <li><i class="fas fa-utensils"></i> Dal Tadka</li>
+                <li><i class="fas fa-utensils"></i> Gujarati Kadhi</li>
+                <li><i class="fas fa-utensils"></i> Sabzi & Roti</li>
+                <li><i class="fas fa-utensils"></i> Chutney & Pickles</li>
+                <li><i class="fas fa-utensils"></i> Sweet Dish (Gulab Jamun)</li>
+                <li><i class="fas fa-utensils"></i> Chapati & Rice</li>
+        
+          </ul>
+          <p><strong>Price per person:</strong> ₹400 (after discount)</p>
+          <a href="reserve-group.html" class="offer-btn">Reserve Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- customer reivew section -->
+
+  <section id="customer-reviews">
+    <h2>Customer Reviews</h2>
+    <div class="review-slider">
+      <div class="review-item">
+        <p>"This product is amazing! It exceeded my expectations. Totally worth it!"</p>
+        <h3>- John Doe</h3>
+        <span class="rating">★★★★★</span>
+      </div>
+      <div class="review-item">
+        <p>"Great quality, would definitely recommend it to others! Love it!"</p>
+        <h3>- Jane Smith</h3>
+        <span class="rating">★★★★☆</span>
+      </div>
+      <div class="review-item">
+        <p>"Superb customer service and a fantastic product. 5 stars!"</p>
+        <h3>- Sarah Lee</h3>
+        <span class="rating">★★★★★</span>
+      </div>
+      <div class="review-item">
+        <p>"I loved the quality and speed of delivery. Very satisfied!"</p>
+        <h3>- Michael Brown</h3>
+        <span class="rating">★★★★☆</span>
+      </div>
+      <div class="review-item">
+        <p>"One of the best purchases I’ve made in a long time. Excellent quality!"</p>
+        <h3>- Emily Davis</h3>
+        <span class="rating">★★★★★</span>
+      </div>
+      <div class="review-item">
+        <p>"Amazing value for money, and the product is as described. I’m very happy!"</p>
+        <h3>- Robert Wilson</h3>
+        <span class="rating">★★★★☆</span>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
+
+
+
+
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Include Slick Slider CSS and JS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+</body>
+
+</html>
+
+
+
+
+
+<!-- Footer -->
+<div id="footer"></div>
+
+<script src="js/header-footer.js"></script>
+<script src="js/index.js"></script>
+<script src="js/script.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
