@@ -2,6 +2,11 @@
 
 DashFood is a one-page website designed to showcase restaurant details, special offers, and delicious Gujarati food. This project provides an engaging and visually appealing experience for users looking for authentic Gujarati cuisine.
 
+## Full Website page
+![Demo Image 9](DashFood/9.jpg)  
+&nbsp;  
+
+
 ## Live Demo
 [DashFood Live Project](https://raw.githack.com/Jenilpaladiya/DashFood/refs/heads/main/index.html)
 
@@ -36,7 +41,7 @@ Here are some preview images of the project:
 &nbsp;  
 ![Demo Image 8](DashFood/8.jpg)  
 &nbsp;  
-![Demo Image 9](DashFood/9.jpg)  
+
 
 ## How to Run the Project
 1. Clone this repository:
